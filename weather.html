@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="style.css" />
+    
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.css" />
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="weather.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Weather</title>
+</head>
+
+<body>
+    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <p class="navbar-item">Weather</p>
+        </div>
+        
+
+        <div id="navt" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="login.html" id="btn" class="button is-primary"> Click here to login!</a>
+                        <a href="pong.html" id="btn" class="button is-primary"> Click here to play pong!</a>
+                        <a href="joke.html" id="btn" class="button is-primary"> 
+                            <strong>Click here for jokes!</strong>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section container is-max-desktop">
+        <div class="column">
+
+            <h1 class="title">Put Weather Coordinates</h1>
+
+            <form>
+
+                <div class="field">
+
+                    <label class="label">Latitude</label>
+
+                    <div class="control">
+
+                        <input class="input" id="latitude" type="text" placeholder="45.68"
+
+                            name="username">
+
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Longitude</label>
+                    <div class="control">
+                        <input class="input" id="longitude" type="text" placeholder="89.432">
+                    </div>
+                </div>
+    
+    
+                <div class="field">                 
+                    
+                    <button id="submitCoord" class="button is-dark">
+                        <span>Get Stats</span>
+                    </button>
+                </div>
+    
+            </form>
+        </div>
+        <div id = "root" class="">
+
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

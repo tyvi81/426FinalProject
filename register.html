@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register a login</title>
+
+    <link rel="stylesheet" href="loginstyle.css" />
+</head>
+
+<body>
+    <div class="card-title">
+        <h1 class="login-title">Register</h1>
+        <h2 class="login-desc">Create a username and password </h2>
+        <div class="missing"></div>
+    </div>
+    <div class="login-card">
+        <form class="login-form">
+            <input class="username-input" placeholder="username" required>
+            <input class="password-input" type="password" placeholder="password" required>
+        </form>
+    </div>
+    <div id="root">
+        <button onClick="location.href='index.html'" class="home-button">Home</button>
+        <button class="register-button">Register</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+          integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script type=module src="register-backend.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js"></script>
+    
+       
+    
+        <script>
+            // Import the functions you need from the SDKs you need
+            
+             
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+              apiKey: "AIzaSyALRKP-1wqtUDbPq0RB37ofTZ7flZFG6aE",
+              authDomain: "finalprject-8feb3.firebaseapp.com",
+              projectId: "finalprject-8feb3",
+              storageBucket: "finalprject-8feb3.appspot.com",
+              messagingSenderId: "543310826444",
+              appId: "1:543310826444:web:f3cefb36f927b05cd06b69",
+              measurementId: "G-1BGZ20XNKW"
+            };
+          
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            var db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true });
+            
+          </script>
+</body>
+
+</html>

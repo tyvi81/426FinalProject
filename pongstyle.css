@@ -1,0 +1,24 @@
+html {
+    background-image: url('https://logos-download.com/wp-content/uploads/2018/03/UNC_Tar_Heels_logo_bright.png');
+    background-repeat:inherit;
+}
+
+.navbar {
+    background-color: blueviolet;
+}
+
+.navbar-item {
+    color:greenyellow;
+    font-weight: bold;
+}
+
+#btn {
+    background-color: palegreen;
+    color: black;
+    transition: .1s linear;
+}
+
+#btn:hover {
+    background-color: turquoise;
+    transition: .1s linear;
+}
